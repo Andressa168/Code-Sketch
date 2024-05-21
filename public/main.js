@@ -89,11 +89,11 @@ camera.add(audioListener);
 // Connect the AudioListener to the camera
 const audioLoader = new THREE.AudioLoader();
 const sound = new THREE.PositionalAudio(audioListener);
-audioLoader.load('../public/sounds/Feels.mp3', function (buffer) {
+audioLoader.load('../sounds/Feels.mp3', function (buffer) {
     sound.setBuffer(buffer);
     sound.setLoop(true);
     sound.setVolume(1);
-    // sound.play();
+    //sound.play();
 });
 
 // Function to start sound playback and animation loop
