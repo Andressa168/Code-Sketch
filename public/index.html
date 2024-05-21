@@ -1,0 +1,38 @@
+<!doctype html>  
+<html lang="en">  
+<head>
+<meta charset="utf-8">  
+<title>JavaScript sounds</title>  
+<script type="importmap">
+{
+	"imports": {        
+		"three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+		"three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+	}
+}
+</script>
+<style>
+* { margin: 10px; }	
+
+#overlay {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 10;
+	width: 100%;
+
+	white-space: pre;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	/*font-size: 1.4rem;*/
+	text-rendering: optimizeLegibility;
+	font-family: monospace;
+}
+
+</style>
+</head>  
+<body>
+<div id="overlay"></div>
+<script type="module" src="main.js"></script>
+</body>  
+</html>
